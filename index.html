@@ -125,28 +125,28 @@
  </header>
 
  <!-- ============ HERO ============ -->
- <section style="position:relative;background:#EADCC4;">
-   <!-- Desktop / tablet: the composed photograph at its true proportions -->
-   <div data-hero-desktop style="position:relative;width:100%;max-width:1600px;margin:0 auto;overflow:hidden;line-height:0;">
-     <img data-hero-photo src="assets/hero.png" alt="A woman sits on a hillside at golden hour, gazing toward a message of hope as seedlings rise from the soil and the sun sets behind a tree." style="display:block;width:100%;height:auto;"/>
-   </div>
-   <!-- Mobile: cropped scene + readable text -->
-   <div data-hero-mobile>
-     <div style="height:300px;overflow:hidden;">
-       <img src="assets/hero.png" alt="Seedlings rising from dark soil at golden hour, a woman seated nearby with a cup of tea" style="width:100%;height:100%;object-fit:cover;object-position:34% 90%;"/>
-     </div>
-     <div style="padding:36px 22px 44px;background:linear-gradient(180deg,#FBF8F2,#F4EFE7);">
-       <h1 style="margin:0 0 18px;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(30px,8.6vw,42px);line-height:1.08;letter-spacing:-.01em;color:#2A241C;">You've been carrying more than you say.</h1>
-       <div style="display:flex;align-items:center;gap:10px;margin:0 0 20px;">
+ <section style="position:relative;background:#EADCC4;overflow:hidden;">
+   <div style="position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/30712585/pexels-photo-30712585.jpeg?auto=compress&cs=tinysrgb&w=1880');background-size:cover;background-position:center 42%;animation:heroZoom 9s ease-out forwards;"></div>
+   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(244,234,211,.85) 0%,rgba(244,234,211,.35) 20%,rgba(244,234,211,.08) 40%,rgba(234,220,196,.15) 65%,rgba(234,220,196,.6) 85%,#EADCC4 100%);pointer-events:none;"></div>
+   <div style="position:absolute;inset:0;background:radial-gradient(55% 65% at 72% 40%,rgba(255,246,220,.45),transparent 60%);pointer-events:none;"></div>
+   <div style="position:relative;max-width:1400px;margin:0 auto;padding:clamp(60px,8vw,120px) clamp(24px,5vw,60px) clamp(80px,10vw,140px);display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(30px,4vw,60px);align-items:center;" data-hero>
+     <div>
+       <h1 style="margin:0 0 clamp(16px,2vw,28px);font-family:'Newsreader',serif;font-weight:400;font-size:clamp(32px,4.8vw,62px);line-height:1.1;letter-spacing:-.01em;color:#2A241C;">You've been carrying more than you say.</h1>
+       <div style="display:flex;align-items:center;gap:10px;margin:0 0 clamp(16px,2vw,24px);">
          <span style="height:1px;width:42px;background:linear-gradient(90deg,transparent,#A07A56);"></span>
          <span style="color:#A07A56;font-size:14px;line-height:1;">&#10047;</span>
          <span style="height:1px;width:42px;background:linear-gradient(90deg,#A07A56,transparent);"></span>
        </div>
-       <div style="font-size:16px;line-height:1.8;color:#5C5142;">
+       <div style="font-size:clamp(15px,1.15vw,18px);line-height:1.8;color:#5C5142;">
          <p style="margin:0 0 14px;">Some of it feels unseen.<br/>Some of it&hellip; hard to even put into words.</p>
          <p style="margin:0 0 14px;">And there are moments where it all feels like too much&mdash; emotionally, mentally&hellip; even spiritually.</p>
          <p style="margin:0 0 16px;">But even here&mdash; in the middle of it&hellip;</p>
-         <p style="margin:0;font-family:'Newsreader',serif;font-style:italic;font-size:25px;color:#2A241C;">there is still <span style="color:#A07A56;">hope.</span></p>
+       </div>
+       <p style="margin:0;font-family:'Newsreader',serif;font-style:italic;font-size:clamp(22px,3vw,40px);color:#2A241C;">there is still <span style="color:#A07A56;">hope.</span></p>
+     </div>
+     <div style="position:relative;">
+       <div style="position:relative;border-radius:18px;overflow:hidden;min-height:clamp(280px,36vw,460px);box-shadow:0 40px 76px -42px rgba(80,58,30,.55);border:1px solid rgba(176,138,82,.3);">
+         <div style="position:absolute;inset:0;background:#E6DAC5 url('https://images.pexels.com/photos/31035343/pexels-photo-31035343.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover no-repeat;"></div>
        </div>
      </div>
    </div>
