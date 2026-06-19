@@ -1,4 +1,19 @@
 (function(){
+  // Skeleton loader dismissal
+  var skeleton = document.getElementById('skeleton');
+  if (skeleton) {
+    var dismiss = function() {
+      skeleton.classList.add('loaded');
+      setTimeout(function() { skeleton.remove(); }, 500);
+    };
+    if (document.readyState === 'complete') {
+      dismiss();
+    } else {
+      window.addEventListener('load', dismiss);
+      setTimeout(dismiss, 4000);
+    }
+  }
+
   // Mobile menu toggle
   var burger = document.querySelector('[data-burger]');
   var mobileMenu = document.querySelector('[data-mobile-menu]');

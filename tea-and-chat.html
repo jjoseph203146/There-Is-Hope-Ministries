@@ -30,9 +30,39 @@
     [data-features]{grid-template-columns:1fr 1fr !important;}
     [data-reminder-items]{grid-template-columns:1fr !important;}
   }
+  /* Skeleton loaders */
+  @keyframes skeleton-shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
+  .skeleton-wrapper{position:fixed;inset:0;z-index:9999;background:#F7F0E1;display:flex;flex-direction:column;transition:opacity .4s ease;}
+  .skeleton-wrapper.loaded{opacity:0;pointer-events:none;}
+  .skel-nav{height:72px;background:rgba(244,239,231,.95);border-bottom:1px solid rgba(160,122,86,.16);display:flex;align-items:center;padding:0 clamp(18px,4vw,46px);gap:16px;}
+  .skel-block{background:linear-gradient(90deg,#EDE5D3 25%,#F5EDDB 50%,#EDE5D3 75%);background-size:800px 100%;animation:skeleton-shimmer 1.6s ease-in-out infinite;border-radius:8px;}
+  .skel-circle{border-radius:50%;}
+  .skel-hero{width:100%;height:clamp(200px,40vw,480px);}
+  .skel-content{max-width:720px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,5vw,40px);display:flex;flex-direction:column;align-items:center;gap:18px;}
 </style>
 </head>
 <body>
+<!-- Skeleton loader -->
+<div class="skeleton-wrapper" id="skeleton">
+  <div class="skel-nav">
+    <div class="skel-block skel-circle" style="width:46px;height:46px;flex-shrink:0;"></div>
+    <div class="skel-block" style="width:140px;height:18px;"></div>
+    <div style="flex:1;"></div>
+    <div class="skel-block" style="width:60px;height:12px;"></div>
+    <div class="skel-block" style="width:60px;height:12px;"></div>
+    <div class="skel-block" style="width:60px;height:12px;"></div>
+    <div class="skel-block" style="width:80px;height:36px;border-radius:999px;"></div>
+  </div>
+  <div class="skel-block skel-hero"></div>
+  <div class="skel-content">
+    <div class="skel-block" style="width:200px;height:40px;"></div>
+    <div class="skel-block" style="width:80px;height:16px;"></div>
+    <div class="skel-block" style="width:100%;max-width:500px;height:14px;"></div>
+    <div class="skel-block" style="width:100%;max-width:460px;height:14px;"></div>
+    <div class="skel-block" style="width:100%;max-width:420px;height:14px;"></div>
+  </div>
+</div>
+
 <div data-root style="position:relative;overflow-x:clip;">
 
  <!-- ============ NAV ============ -->
